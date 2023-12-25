@@ -1,4 +1,29 @@
 module.exports = {
   root: true,
   extends: '@react-native',
-};
+  plugins: ['prettier', 'react', 'react-native'],
+  rules: {
+    'no-console': 'error',
+    semi: ['error', 'never'],
+    'arrow-parens': ['error', 'always'],
+    quotes: ['error', 'single', {allowTemplateLiterals: true}],
+    'jsx-quotes': ['error', 'prefer-single'],
+    'no-extra-semi': 'off',
+    'react-hooks/exhaustive-deps': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-commonjs': 'off',
+    'react/display-name': 'off',
+    'import/no-namespace': 'off',
+    'react-native/no-unused-styles': 1,
+    'react-native/split-platform-components': 2,
+    'react-native/no-inline-styles': 2,
+    'react-native/no-color-literals': 0,
+    'react-native/no-raw-text': 2,
+    'no-unused-expressions': [2, {allowShortCircuit: true, allowTernary: true}],
+    'no-unused-vars': [
+      'error',
+      {argsIgnorePattern: '^_', ignoreRestSiblings: true},
+    ],
+    'no-empty-function': ['error', {allow: ['methods']}],
+  },
+}
