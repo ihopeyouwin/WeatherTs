@@ -9,7 +9,11 @@ const Stack = createStackNavigator()
 const AppNavigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode={'none'}>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
         <Stack.Screen name={'BottomTabNavigator'} component={BottomTabNavigator} />
         <Stack.Screen name='Test' component={TestScreen} />
         <Stack.Screen name='Backup' component={BackupScreen} />

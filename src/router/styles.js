@@ -1,9 +1,11 @@
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  icon: {
+    height: 20,
+    width: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 })
 
